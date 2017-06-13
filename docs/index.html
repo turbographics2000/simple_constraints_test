@@ -12,13 +12,20 @@
             float: left;
             font-size: larger;
         }
+
+        #previewContainer, #uiContainer {
+            float: left;
+        }
     </style>
 </head>
 
-<video id="preview" autoplay width="320" height="240"></video>
-<div id="msg"></div>
-<pre><code id="constraintsPreview"></code></pre>
 <body>
+    <div id="previewContainer">
+        <video id="preview" autoplay width="320" height="240"></video>
+        <div id="msg"></div>
+        <pre><code id="constraintsPreview"></code></pre>
+    </div>
+    <div id="uiContainer">
     <div class="item">
         <Pre id="truefalseConstraints"><code>
 {
@@ -73,7 +80,9 @@
     </code></pre>
         <button id="btnMinMaxNumValue">test</button>
     </div>
+    </div>
     <script src="test.js"></script>
+
 </body>
 
 </html>
