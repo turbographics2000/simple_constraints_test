@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .item {
+            padding: 5px;
+            border: 1px solid black;
+            float: left;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<video id="preview" autoplay></video>
+<div id="msg"></div>
+<body>
+    <div class="item">
+        <Pre id="truefalseConstraints"><code>
+{
+    "video": true,
+    "audio": false
+}
+    </code></pre>
+        <button id="btnTrueFalse">test</button>
+    </div>
+    <div class="item">
+        <Pre id="numValueConstraints"><code>
+{
+    "video": { 
+        "width": 640, 
+        "height": 480 
+    }
+}
+    </code></pre>
+        <button id="btnNumValue">test</button>
+    </div>
+    <div class="item">
+        <Pre id="exactConstraints"><code>
+{
+    "video": { 
+        "width": {
+            "exact":640
+        }, 
+        "height": {
+            "exact":480
+        } 
+    }
+}
+    </code></pre>
+        <button id="btnExactNumValue">test</button>
+    </div>
+    <div class="item">
+        <Pre id="minmaxConstraints"><code>
+{
+    "video": { 
+        "width": {
+            "min":600, 
+            "max":800
+        }, 
+        "height": {
+            "min":300, 
+            "max":500
+        } 
+    }
+}
+    </code></pre>
+        <button id="btnMinMaxNumValue">test</button>
+    </div>
+    <script src="test.js"></script>
+</body>
+
+</html>
