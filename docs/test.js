@@ -11,7 +11,7 @@ btnMinMaxNumValue.onclick = evt => {
     gUM(minmaxConstraints.textContent);
 }
 function gUM(constraints) {
-    msg.innerHTML = constraints.replace(/\n/g, '<br>');
+    constraintsPreview.innerHTML = constraints.replace(/\n/g, '<br>');
     var constraintsObj = JSON.parse(constraints);
     preview.onloadedmetadata = evt => {
         msg.textContent = preview.videoWidth + ' x ' + preview.videoHeight;
